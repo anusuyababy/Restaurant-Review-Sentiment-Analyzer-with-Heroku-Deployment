@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+  <meta charset="UTF-8">
+  <title>RESTAURANT REVIEW ANALYZER APP</title>
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+    </head>
+
+    <body bgcolor="brown">
+
+        <center>
+        <h1>RESTAURANT REVIEW ANALYZER</h1>
+        
+        
+        </center>
+                <br/><br/>      
+    	        <center>
+                <form action="{{ url_for('predict') }}" method="POST">
+                
+                <textarea name="review" rows="20" cols="75" placeholder="Enter Your Message Here..."></textarea><br/>
+
+                
+                <br/><br/>
+
+                <input type="submit" value="Predict">
+        	</form>
+                </center>
+              
+              
+              <br/>
+              <br/>
+              <center>
+              <h2 style="color:blue;">{{ prediction }}</h2>
+              
+              
+              </center>
+
+              <br/>
+              <br/>
+              
+        
+       <div class='footer'>
+           <center>
+           <p>Made by Anusuya.</p>
+           </center>
+       </div>
+
+    </body>
+</html>
